@@ -9,7 +9,7 @@ $sql ="UPDATE tbl_product SET
     WHERE id='$_GET[id]' ";
 
 if (mysqli_query($conn,$sql)) {
-    echo"deleting done";
+    echo"update done";
     header("location: product_show.php");
 } else {
     echo "error deleting record" . mysqli_error($conn);
